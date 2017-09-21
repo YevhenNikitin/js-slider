@@ -10,7 +10,8 @@
  list-style-type: none;
 }
 
-/* Each slide style: absolute regarding Slides area, completely fill the Slides area, completely transparent, with overlapping and with a short transition */
+/* Each slide style: absolute regarding Slides area, completely fill the Slides area, */
+/* completely transparent, with overlapping and with a short transition */
 
 .slide {
  position: absolute;
@@ -27,20 +28,23 @@
  transition: opacity 1s;
 }
 
+/* First slide styles, displayed after 2-5 slides with the same transition time */
+
 .showing {
  opacity: 1;
  z-index: 2;
 }
 
-/* Slider Appearance */
+/* padding and white color for internal text*/
 
 .slide {
- font-size: 40px;
+ font-size: 36px;
  padding: 40px;
  box-sizing: border-box;
- background: #333;
  color: #fff;
 }
+
+/* BG-color for all slides*/
 
 .slide:nth-of-type(1) {
  background: red;
